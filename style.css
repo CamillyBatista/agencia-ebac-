@@ -1,0 +1,150 @@
+body,
+ul,
+li,
+p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1rem;
+    font-family: Arial;
+}
+:root{
+    --cor01: #C400FF;
+    --cor02: #00FF9B;
+    --cor03: #FFB200;
+    --cor04: #A17FAB;
+    --cor05: #648075;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor);
+    height: 1em;
+    background-color: #d8c3df;
+}
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 20px;
+}
+
+img{
+    width: 3em;
+}
+
+
+a{
+    color: var(--cor01);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+
+}
+
+a:hover{
+    color: var(--cor04);
+    background-color: var(--cor03);
+    border-radius: 5px;
+}
+
+main{
+    background-color: var(--cor04);
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+
+#apresentacao{
+    background-image: url(andras-vas-Bd7gNnWJBkU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    background-color: white;
+}
+
+#apresentacao{
+    background-color: var(--cor04);
+    padding: 100px 100px;
+    color: aliceblue;
+    margin: 0 auto;
+    
+}
+#apresentacao > h1:hover{
+    color: #C400FF;
+    background-color: var(--cor05);
+    
+}
+
+#sobre{
+    background-color: var(--cor03);
+    border-radius: 10px;
+    padding: 3em;
+    color: aliceblue;
+    margin-top: 2em;
+    
+}
+
+#servicos{
+    margin-top: 50px;
+    color: white;
+    padding: 10px;
+    background-color: var(--cor05);
+    border-radius: 20px;
+}
+
+#servicos > ul{
+    columns: 4;
+    padding: 10px;
+}
+
+#depoimentos {
+    text-align: center;
+    
+}
+
+.lista-depoimentos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    width: ;
+    gap: 2%;
+    margin-top: 1em;
+
+}
+.lista-depoimentos > div{
+    background-color: var(--cor05) ;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#depoimentos > h2{
+    background-color: var(--cor05);
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--cor04);
+}
