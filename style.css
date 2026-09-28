@@ -15,7 +15,9 @@ p{
     --cor04: #A17FAB;
     --cor05: #648075;
 }
-
+body{
+    background-color: white;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -25,126 +27,118 @@ p{
     height: 1em;
     background-color: #d8c3df;
 }
-.menu{
-    display: flex;
-}
 
-.menu li{
-    margin-left: 20px;
-}
-
-img{
+.header__img{
     width: 3em;
 }
 
+.header__menu{
+    display: flex;
+}
 
-a{
-    color: var(--cor01);
+.header__lista{
+    margin-left: 20px;
+}
+
+
+.header__link{
+    color: var(--cor05);
     text-decoration: none;
     display: block;
     padding: 10px;
 
 }
 
-a:hover{
+.header__link:hover{
     color: var(--cor04);
-    background-color: var(--cor03);
     border-radius: 5px;
 }
 
 main{
-    background-color: var(--cor04);
-    min-width: 300px;
-    max-width: 1000px;
-    padding: 15px;
-    margin: auto;
     text-align: center;
     align-content: center;
 }
 
 
-#apresentacao{
+.apresentacao{
     background-image: url(andras-vas-Bd7gNnWJBkU-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-body{
-    background-color: white;
-}
 
-#apresentacao{
-    background-color: var(--cor04);
+
+.apresentacao{
     padding: 100px 100px;
-    color: aliceblue;
+    min-height: 50rem;
+    color: white;
     margin: 0 auto;
     
 }
-#apresentacao > h1:hover{
+.apresentacao__titulo:hover{
     color: #C400FF;
-    background-color: var(--cor05);
-    
 }
 
-#sobre{
+.sobre{
     background-color: var(--cor03);
     border-radius: 10px;
     padding: 3em;
     color: aliceblue;
-    margin-top: 2em;
-    
+    width: 80%;
+    margin: 3rem auto 0;
 }
 
-#servicos{
+.servicos{
     margin-top: 50px;
     color: white;
-    padding: 10px;
-    background-color: var(--cor05);
-    border-radius: 20px;
+    padding: 3em;
+    background-color: var(--cor04);
+    border-radius: 10px;
+    width: 80%;
+    margin: 3rem auto 0;
 }
 
-#servicos > ul{
+.servicos__trabalhos{
     columns: 4;
     padding: 10px;
 }
 
-#depoimentos {
+.depoimentos {
     text-align: center;
     
 }
 
-.lista-depoimentos{
+.depoimentos__lista{
     display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-    width: ;
+    grid-template-columns: repeat(3,1fr);
     gap: 2%;
     margin-top: 1em;
 
 }
-.lista-depoimentos > div{
-    background-color: var(--cor05) ;
+.depoimentos__lista > div{
+    background-color: var(--cor04) ;
     color: white;
     border-radius: 15px;
     padding: 15px;
 }
 
-#depoimentos > h2{
-    background-color: var(--cor05);
-    margin: 0 auto;
-    margin-top: 2em;
-    border-radius: 3px;
-    width: fit-content;
-    padding: 5px;
+.depoimentos__titulo{
+    margin: 3rem auto 0;
+
 }
 
-form{
+.contatos{
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
     gap: 10px;
 }
 
-input{
+.contatos__input{
     padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--cor04);
+    width: 100%;
+    box-sizing: border-box;
 }
