@@ -23,8 +23,6 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: var(--cor);
-    height: 1em;
     background-color: #d8c3df;
 }
 
@@ -79,8 +77,8 @@ main{
     color: #C400FF;
 }
 
-.sobre{
-    background-color: var(--cor03);
+.section_card{
+    background-color: var(--cor04);
     border-radius: 10px;
     padding: 3em;
     color: aliceblue;
@@ -88,14 +86,8 @@ main{
     margin: 3rem auto 0;
 }
 
-.servicos{
-    margin-top: 50px;
-    color: white;
-    padding: 3em;
-    background-color: var(--cor04);
-    border-radius: 10px;
-    width: 80%;
-    margin: 3rem auto 0;
+.section_card--sobre{
+    background-color: var(--cor03);
 }
 
 .servicos__trabalhos{
@@ -115,7 +107,7 @@ main{
     margin-top: 1em;
 
 }
-.depoimentos__lista > div{
+.depoimentos__div{
     background-color: var(--cor04) ;
     color: white;
     border-radius: 15px;
@@ -141,4 +133,31 @@ main{
     border: 1px solid var(--cor04);
     width: 100%;
     box-sizing: border-box;
+}
+
+@media (max-width:580px){
+    .header{
+        padding: 10px;
+        flex-direction: row;
+        height: auto;
+    }
+    .header__menu{
+        flex-wrap: wrap;
+    }
+    .header__lista{
+        margin-left: 5px;
+    }
+    .header__link{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 590px){
+    .section_card{
+        width: 50%;
+    }
+    .servicos__trabalhos{
+        padding: 1em;
+        columns: 1;
+    }
 }
