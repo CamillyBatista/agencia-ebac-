@@ -1,0 +1,71 @@
+@use 'variaveis';
+@use 'mixins';
+
+.servicos__trabalhos{
+    columns: 4;
+    
+}
+
+.apresentacao{
+    background-image: url("../sass/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 100px;
+    min-height: 50rem;
+}
+main{
+    text-align: center;
+    align-content: center;
+}
+
+.depoimentos {
+    text-align: center;
+
+
+    &__lista{
+        @include mixins.grid;
+    }
+}
+.contatos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width:580px){
+    .header{
+        padding: 10px;
+        flex-direction: row;
+        height: auto;
+    }
+    .header__menu{
+        flex-wrap: wrap;
+    }
+    .header__lista{
+        margin-left: 5px;
+    }
+    .header__link{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 590px){
+    .section_card{
+        width: 50%;
+    }
+    .servicos__trabalhos{
+        padding: 1em;
+        columns: 1;
+    }
+}

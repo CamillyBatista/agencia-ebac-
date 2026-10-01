@@ -1,0 +1,10 @@
+@mixin borda-arredondada($raio: 5px){
+    border-radius: $raio;
+}
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+    margin-top: 1em;
+}

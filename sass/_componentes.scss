@@ -1,0 +1,68 @@
+@use 'variaveis';
+@use 'mixins';
+@use 'sass:math';
+body{
+    background-color: white;
+}
+.section_card{
+    background-color: variaveis.$cor04;
+    @include mixins.borda-arredondada(5px);
+    padding: 3em;
+    color: aliceblue;
+    width: 80%;
+    margin: 3rem auto 0;
+}
+.section_card--sobre{
+    background-color: variaveis.$cor03;
+}
+
+.apresentacao{
+    color: white;
+    margin: 0 auto;
+    
+    &__titulo:hover{
+        color: variaveis.$cor04;
+    }
+}
+
+.depoimentos__div{
+        background-color: variaveis.$cor04;
+        color: white;
+        @include mixins.borda-arredondada(5px * 3);
+        padding: calc(variaveis.$base-padding * 2);
+        &__titulo{
+            margin: 3rem auto 0;
+        }
+    }
+    
+.header{
+    background-color: #d8c3df;
+    &__img{
+        width: 2em;
+    }
+    &__menu{
+        display: flex;
+    }
+    &__lista{
+        margin-left: 20px;
+    }
+    &__link{
+        color: variaveis.$cor04;
+        text-decoration: none;
+        display: block;
+        padding: variaveis.$base-padding;
+    }
+    &__link:hover{
+        color: variaveis.$cor03;
+        @include mixins.borda-arredondada;
+    }
+}
+
+.contatos{
+    &__input{
+        padding: variaveis.$base-padding;;
+        border-radius: 5px;
+        border: 1px solid variaveis.$cor04;
+        width: 100%;
+        box-sizing: border-box;
+    }}
